@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - LaKhWaN</title>
+    <meta name="description" content="My First Website">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'css/smoothproducts.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">LaKhWaN</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-hero" style="background-image:url(&quot;{% static 'img/tech/image4.jpg' %}&quot;);color:rgba(9, 162, 255, 0.85);">
+            <div class="text">
+                <h2 style="text-shadow: 2px 2px 7px rgb(0,0,0);">LaKhWaN's Website</h2>
+                <p style="text-shadow: 2px 2px 7px rgb(0,0,0);">Welcome to LaKhWaN's website here you can do many things but before get started register yourselves.</p><button class="btn btn-outline-light btn-lg" onclick="location.href = '/register'" data-bs-hover-animate="pulse" type="button" style="text-shadow: 0px 0px;">Register</button></div>
+        </section>
+        <section data-aos="fade-up" class="clean-block clean-info dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Features</h2>
+                    <p>The best thing is you can do live chat!</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 offset-xl-0"><img class="rounded img-fluid" src="{% static 'img\chat.png' %}"></div>
+                    <div class="col-md-6">
+                        <h3>Live Chat</h3>
+                        <div class="getting-started-info">
+                            <p>You can do live chatting via our website, which is fully encrypted. That means your information is private and only between your friend you talking to. You can have fun by doing chatting online without downloading any kind
+                                of software or application. Click the button below to Register yourselves to get full benifits.</p>
+                        </div><button class="btn btn-outline-primary btn-lg" data-bs-hover-animate="swing" onclick="location.href = '/register'" type="button">Register</button></div>
+                </div>
+            </div>
+        </section>
+        <div class="clean-block add-on social-icons blue">
+            <div class="icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/upenderlakhwan/"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
+        </div>
+    </main>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{% static 'js/smoothproducts.min.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+</body>
+
+</html>

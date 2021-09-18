@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Chat - LaKhWaN</title>
+  </head>
+  <body>
+    <form action="/msgsent" method="get">
+        <h3>Latest Message:</h3>
+      {{fname}} : {{lastmessage}}
+      <br />
+      <h3>Your Message:</h3>
+      <input type="text" name="msg" />
+      <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="/livechat" method="get">
+      <button type="submit">Refresh</button>
+    </form>
+  </body>
+</html>
